@@ -5,8 +5,11 @@ async function registerA(domain_name, options = {}) {
   r = await promise.then(data => {
     return data;
   });
-
-  return r['A'][0];
+  if (r['A'].length > 0) {
+    return r['A'][0];
+  } else {
+    return {}
+  }
 }
 
 module.exports = { registerA };
