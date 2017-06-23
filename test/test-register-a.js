@@ -1,6 +1,6 @@
 const expect  = require('chai').expect;
 
-const { registerA } = require('../src/registerA');
+const { registerA } = require('../index');
 
 describe('#registerA', () => {
   it('return correct umbler.com ip', async function() {

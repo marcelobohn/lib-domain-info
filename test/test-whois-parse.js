@@ -1,6 +1,6 @@
 const expect  = require('chai').expect;
 
-const { whoisParse } = require('../src/whoisParse');
+const { whoisParse } = require('../index');
 
 describe('#whoisParse', () => {
   it('return whois data of umbler.com', async function() {

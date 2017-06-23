@@ -1,6 +1,6 @@
 const expect  = require('chai').expect;
 
-const { namesServers } = require('../src/namesServers');
+const { namesServers } = require('../index');
 
 describe('#namesServers', () => {
   it('return names servers of umbler.com', async function() {
