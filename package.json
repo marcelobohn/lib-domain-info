@@ -1,5 +1,5 @@
 {
-  "name": "api-domain-info",
+  "name": "lib-domain-info",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
