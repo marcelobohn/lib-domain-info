@@ -3,7 +3,6 @@ const whois = require('whois-json');
 promisedWhois = (domain) => {
   return new Promise((resolve, reject) => {
     whois(domain, (err, data) => {
-    // whois(domain, {verbose: true} , (err, data) => {
       if (err) {
         reject(err)
       } else {

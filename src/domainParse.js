@@ -13,7 +13,7 @@ promisedDomainInfo = (domain_name, type) => {
 }
 
 async function registerA(domain_name, options = {}) {
-  r = await await promisedDomainInfo(domain_name, ['A']);
+  r = await promisedDomainInfo(domain_name, ['A']);
   if (r['A'].length > 0) {
     return r['A'][0];
   } else {
@@ -22,7 +22,7 @@ async function registerA(domain_name, options = {}) {
 }
 
 async function namesServers(domain_name, options = {}) {
-  r = await await promisedDomainInfo(domain_name, ['NS']);
+  r = await promisedDomainInfo(domain_name, ['NS']);
   if (r['NS'].length > 0) {
     return r['NS'];
   } else {
